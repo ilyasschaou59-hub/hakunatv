@@ -23,7 +23,7 @@
     plan: function (devicePhrase, months, price) {
       return "Hallo HAKUNA TV, ich interessiere mich für das Paket für " + devicePhrase +
         " mit " + (WA_TERMS[months] || months + " Monaten") + " Laufzeit" +
-        (price ? " (" + price + " €)" : "") + ". Bitte sendet mir weitere Informationen.";
+        (price ? " (" + price + " €)" : "") + ".";
     }
   };
 
@@ -178,15 +178,6 @@
           cta.setAttribute("aria-label", label);
         }
       }
-
-      // Startseite: Verweis auf das passende Paket der Preisseite inkl. Laufzeit
-      var planLink = card.querySelector("[data-price-link]");
-      if (planLink) {
-        planLink.href = "pricing.html?geraete=" + devices + "&laufzeit=" + months + "#" +
-          planLink.getAttribute("data-price-link");
-        planLink.setAttribute("aria-label", name + " für " + termLabels[months] + " zu " + price +
-          " € – Paket auf der Preisseite anfragen");
-      }
     };
 
     var syncSwitch = function () {
@@ -223,7 +214,7 @@
       });
     }
 
-    // Vorauswahl über URL-Parameter (z. B. von der Startseite: ?geraete=2&laufzeit=6)
+    // Vorauswahl über URL-Parameter (z. B. pricing.html?geraete=2&laufzeit=6)
     if (window.URLSearchParams) {
       var preset = new URLSearchParams(window.location.search);
       var presetDevices = preset.get("geraete");
