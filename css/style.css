@@ -1357,53 +1357,6 @@ ul, ol.steps { padding: 0; margin: 0; list-style: none; }
   .licence-note { flex-direction: column; padding: 24px 20px; }
 }
 
-/* Verlängerungs-Hinweis (Preisseite) ---------------------------------------- */
-.page-hero--notice { padding-top: calc(var(--header-h) + 20px); }
-.renew-notice {
-  position: relative;
-  display: flex;
-  align-items: center;
-  gap: 16px;
-  max-width: 820px;
-  margin: 0 auto clamp(40px, 6vw, 64px);
-  padding: 14px 22px 14px 14px;
-  border-radius: 16px;
-  background: #0d1124;
-  box-shadow: 0 0 0 1px rgba(8, 9, 17, 0.6), 0 12px 40px -16px rgba(145, 70, 255, 0.6), 0 0 60px -30px rgba(67, 133, 255, 0.7);
-  text-align: left;
-}
-.renew-notice::before {           /* Verlaufsrahmen */
-  content: "";
-  position: absolute;
-  inset: 0;
-  padding: 1px;
-  border-radius: inherit;
-  background: var(--grad-brand);
-  -webkit-mask: linear-gradient(#000 0 0) content-box, linear-gradient(#000 0 0);
-  -webkit-mask-composite: xor;
-  mask: linear-gradient(#000 0 0) content-box exclude, linear-gradient(#000 0 0);
-  pointer-events: none;
-}
-.renew-icon {
-  flex-shrink: 0;
-  display: grid;
-  place-items: center;
-  width: 40px; height: 40px;
-  border-radius: 12px;
-  background: linear-gradient(135deg, rgba(145, 70, 255, 0.28), rgba(67, 133, 255, 0.2));
-  color: var(--white);
-}
-.renew-icon svg { width: 20px; height: 20px; }
-.renew-divider {
-  flex-shrink: 0;
-  align-self: stretch;
-  width: 1px;
-  margin-block: 4px;
-  background: linear-gradient(180deg, transparent, rgba(255, 255, 255, 0.25), transparent);
-}
-.renew-notice p { margin: 0; color: var(--text); font-size: 0.975rem; line-height: 1.55; }
-.renew-notice strong { font-weight: 700; color: var(--white); }
-
 .faq-answer .faq-action { margin-top: 16px; }
 .btn svg { pointer-events: none; }
 
@@ -1496,9 +1449,6 @@ ul, ol.steps { padding: 0; margin: 0; list-style: none; }
   .support-grid { grid-template-columns: 1fr; max-width: 620px; }
 }
 @media (max-width: 640px) {
-  .renew-notice { align-items: flex-start; gap: 12px; padding: 14px 16px 14px 12px; }
-  .renew-icon { width: 36px; height: 36px; border-radius: 10px; }
-  .renew-notice p { font-size: 0.925rem; }
   .support-card { padding: 26px 22px; }
   .support-card--whatsapp .btn { width: 100%; white-space: normal; }
 }
