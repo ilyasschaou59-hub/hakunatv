@@ -1,0 +1,28 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="630" viewBox="0 0 1200 630">
+  <defs>
+    <radialGradient id="a" cx="85%" cy="0%" r="80%">
+      <stop offset="0" stop-color="#9146ff" stop-opacity=".7"/>
+      <stop offset="1" stop-color="#080911" stop-opacity="0"/>
+    </radialGradient>
+    <radialGradient id="b" cx="0%" cy="100%" r="70%">
+      <stop offset="0" stop-color="#2c4bd8" stop-opacity=".5"/>
+      <stop offset="1" stop-color="#080911" stop-opacity="0"/>
+    </radialGradient>
+    <linearGradient id="g" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#9146ff"/>
+      <stop offset="1" stop-color="#4385ff"/>
+    </linearGradient>
+  </defs>
+  <rect width="1200" height="630" fill="#080911"/>
+  <rect width="1200" height="630" fill="url(#a)"/>
+  <rect width="1200" height="630" fill="url(#b)"/>
+  <g transform="translate(96 200)">
+    <rect width="112" height="112" rx="28" fill="url(#g)"/>
+    <rect x="21" y="30" width="70" height="47" rx="10" fill="none" stroke="#fff" stroke-width="6"/>
+    <path d="M49 44.5v17.5l15-8.75z" fill="#fff"/>
+    <path d="M42 88h28" stroke="#fff" stroke-width="6" stroke-linecap="round"/>
+  </g>
+  <text x="240" y="286" font-family="Segoe UI, Inter, Arial, sans-serif" font-size="84" font-weight="800" fill="#fff" letter-spacing="3">HAKUNA <tspan fill="#7f6bff">TV</tspan></text>
+  <text x="98" y="420" font-family="Segoe UI, Inter, Arial, sans-serif" font-size="44" font-weight="600" fill="#e9ebf8">Premium-Streaming – ganz einfach</text>
+  <text x="98" y="480" font-family="Segoe UI, Inter, Arial, sans-serif" font-size="30" fill="#a4abd0">Deine lizenzierten Inhalte – übersichtlich auf kompatiblen Geräten.</text>
+</svg>
