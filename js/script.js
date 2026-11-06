@@ -110,7 +110,10 @@
   document.querySelectorAll(".main-nav a[href]").forEach(function (link) {
     var href = new URL(link.href, window.location.href).pathname
       .replace(/index\.html$/, "").replace(/\/$/, "") || "/";
-    if (href === path) link.setAttribute("aria-current", "page");
+    // Unterseiten (z. B. Blogartikel) markieren ihren Bereich mit
+    if (href === path || (href !== "/" && path.indexOf(href + "/") === 0)) {
+      link.setAttribute("aria-current", "page");
+    }
   });
 
   /* Einblend-Animationen beim Scrollen */
